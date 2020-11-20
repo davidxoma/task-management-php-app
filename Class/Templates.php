@@ -2,11 +2,11 @@
 class Templates
 {
     public function Header(){
-        require_once("parts/header.php");
+        require_once("./Parts/header.php");
     }
 
     public function Footer(){
-        require_once("parts/footer.php");
+        require_once("./Parts/footer.php");
     }
 }
 ?>
