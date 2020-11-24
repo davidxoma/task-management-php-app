@@ -6,24 +6,15 @@ require_once("Class/Templates.php");
 
 $temp = new Templates;
 
-
-
 $temp->Header();
-
-
-
 if ( logged() ){
-
-    header("Location: dash.php?page=dashboard");
+    $temp->The_Content($_GET["page"]);
     
-
 }else{
     $temp->Login_page();
 }
 
 
-
 $temp->Footer();
-?>
 
-    
+?>
